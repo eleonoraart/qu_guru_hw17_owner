@@ -31,9 +31,15 @@ dependencies {
     testImplementation 'io.qameta.allure:allure-selenide:2.21.0'
     testImplementation 'org.slf4j:slf4j-simple:1.7.32'
     testImplementation 'org.testng:testng:7.1.0'
+    testImplementation "org.aeonbits.owner:owner:1.0.12"
 
 }
 
 test {
     useJUnitPlatform()
+    systemProperties(System.getProperties())
+}
+
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
 }
