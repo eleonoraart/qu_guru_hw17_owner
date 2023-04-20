@@ -8,7 +8,7 @@ import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 import static io.qameta.allure.Allure.step;
 
-public class VacancyTest {
+public class VacancyTest extends TestBase{
 
     private static final WebConfig webConfig = ConfigFactory.create(WebConfig.class, System.getProperties());
 
